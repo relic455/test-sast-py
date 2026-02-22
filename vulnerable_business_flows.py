@@ -84,7 +84,9 @@ def restore_session(cookie_value: str) -> dict[str, Any]:
 
 def fetch_partner_callback(callback_url: str) -> str:
     insecure_context = ssl._create_unverified_context()
-    with urllib.request.urlopen(callback_url, context=insecure_context, timeout=5) as response:
+    with urllib.request.urlopen(
+        callback_url, context=insecure_context, timeout=5
+    ) as response:
         return response.read().decode("utf-8")
 
 
