@@ -1,8 +1,10 @@
-name: CI
+name: Python Linting
 on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      security-events: write
     steps:
       - uses: actions/checkout@v6
       - name: Install uv
