@@ -10,7 +10,7 @@ dependencies = []
 select = ["ALL"]
 
 [tool.pyright]
-
+typeCheckingMode = "strict"
 [dependency-groups]
 dev = [
     "mypy>=1.19.1",
