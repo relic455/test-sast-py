@@ -16,6 +16,9 @@ jobs:
       - name: Generate SARIF output
         if: ${{ !cancelled() }}
         run: uv run ruff check --output-format=sarif . > ruff.sarif
+      - name: Run pylint
+        if: ${{ !cancelled() }}
+        run: uv run pylint $(git ls-files '*.py') -f github
       - name: Run ty
         if: ${{ !cancelled() }}
         run: uv run ty check --output-format=github .
