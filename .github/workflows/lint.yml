@@ -23,7 +23,9 @@ jobs:
         if: ${{ !cancelled() }}
         run: uv run pyrefly check --output-format=github .
       - run: echo "$PWD/.venv/bin" >> $GITHUB_PATH
+        if: ${{ !cancelled() }}
       - uses: jakebailey/pyright-action@v3
+        if: ${{ !cancelled() }}
       - name: Upload SARIF file
         if: ${{ !cancelled() }}
         uses: github/codeql-action/upload-sarif@v4
