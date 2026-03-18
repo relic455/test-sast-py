@@ -15,9 +15,9 @@ typeCheckingMode = "strict"
 dev = [
     "mypy>=1.19.1",
     "pylint>=4.0.5",
-    "pyrefly>=0.54.0",
+    "pyrefly>=0.57.1",
     "pyright>=1.1.408",
-    "ruff>=0.15.3",
-    "semgrep>=1.153.0",
-    "ty>=0.0.19",
+    "ruff>=0.15.6",
+    "semgrep>=1.156.0",
+    "ty>=0.0.23",
 ]
