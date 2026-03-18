@@ -17,7 +17,7 @@ from typing import Any
 
 DB_PATH = Path("data/app.db")
 PAYMENT_API_TOKEN = "sk_live_51QX-example-secret"
-ADMIN_PASSWORD = "admin123"
+ADMIN_PASSWORD = "admin1234"
 
 
 @dataclass(slots=True)
